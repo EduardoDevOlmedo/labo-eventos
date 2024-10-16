@@ -10,7 +10,6 @@ C:\Users\eduar\Desktop\labo-eventos\eventos\bin\Debug\net8.0-windows\runtimes\wi
 C:\Users\eduar\Desktop\labo-eventos\eventos\bin\Debug\net8.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\eduar\Desktop\labo-eventos\eventos\bin\Debug\net8.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\eduar\Desktop\labo-eventos\eventos\obj\Debug\net8.0-windows\eventos.csproj.AssemblyReference.cache
-C:\Users\eduar\Desktop\labo-eventos\eventos\obj\Debug\net8.0-windows\eventos.Form1.resources
 C:\Users\eduar\Desktop\labo-eventos\eventos\obj\Debug\net8.0-windows\eventos.csproj.GenerateResource.cache
 C:\Users\eduar\Desktop\labo-eventos\eventos\obj\Debug\net8.0-windows\eventos.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\eduar\Desktop\labo-eventos\eventos\obj\Debug\net8.0-windows\eventos.AssemblyInfoInputs.cache
@@ -22,3 +21,6 @@ C:\Users\eduar\Desktop\labo-eventos\eventos\obj\Debug\net8.0-windows\refint\even
 C:\Users\eduar\Desktop\labo-eventos\eventos\obj\Debug\net8.0-windows\eventos.pdb
 C:\Users\eduar\Desktop\labo-eventos\eventos\obj\Debug\net8.0-windows\eventos.genruntimeconfig.cache
 C:\Users\eduar\Desktop\labo-eventos\eventos\obj\Debug\net8.0-windows\ref\eventos.dll
+C:\Users\eduar\Desktop\labo-eventos\eventos\obj\Debug\net8.0-windows\eventos.sourcelink.json
+C:\Users\eduar\Desktop\labo-eventos\eventos\obj\Debug\net8.0-windows\eventos.Login.resources
+C:\Users\eduar\Desktop\labo-eventos\eventos\obj\Debug\net8.0-windows\eventos.Views.Admin.resources
