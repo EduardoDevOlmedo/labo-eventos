@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            verTablasBtn = new Button();
             label1 = new Label();
             label2 = new Label();
             nombreDonacionTxt = new TextBox();
@@ -45,19 +44,10 @@
             recursosUbicacionTxt = new TextBox();
             label8 = new Label();
             donacionesUbicacionTxt = new TextBox();
+            verTablasBtn = new Button();
+            tablasBtn = new Button();
+            eventosBtn = new Button();
             SuspendLayout();
-            // 
-            // verTablasBtn
-            // 
-            verTablasBtn.BackColor = SystemColors.ControlDarkDark;
-            verTablasBtn.Location = new Point(31, 629);
-            verTablasBtn.Margin = new Padding(0);
-            verTablasBtn.Name = "verTablasBtn";
-            verTablasBtn.Size = new Size(500, 48);
-            verTablasBtn.TabIndex = 0;
-            verTablasBtn.Text = "Ver tablas de recursos y donaciones";
-            verTablasBtn.UseVisualStyleBackColor = false;
-            verTablasBtn.Click += verTablasBtn_Click;
             // 
             // label1
             // 
@@ -196,11 +186,40 @@
             donacionesUbicacionTxt.Size = new Size(500, 27);
             donacionesUbicacionTxt.TabIndex = 16;
             // 
+            // verTablasBtn
+            // 
+            verTablasBtn.Location = new Point(0, 0);
+            verTablasBtn.Name = "verTablasBtn";
+            verTablasBtn.Size = new Size(75, 23);
+            verTablasBtn.TabIndex = 0;
+            // 
+            // tablasBtn
+            // 
+            tablasBtn.Location = new Point(31, 619);
+            tablasBtn.Name = "tablasBtn";
+            tablasBtn.Size = new Size(498, 29);
+            tablasBtn.TabIndex = 18;
+            tablasBtn.Text = "Ver tablas del centro";
+            tablasBtn.UseVisualStyleBackColor = true;
+            tablasBtn.Click += verTablasBtn_Click;
+            // 
+            // eventosBtn
+            // 
+            eventosBtn.Location = new Point(33, 667);
+            eventosBtn.Name = "eventosBtn";
+            eventosBtn.Size = new Size(498, 29);
+            eventosBtn.TabIndex = 19;
+            eventosBtn.Text = "Ver tabla de eventos";
+            eventosBtn.UseVisualStyleBackColor = true;
+            eventosBtn.Click += verTablasEventosBtn_Click;
+            // 
             // Admin
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(562, 686);
+            ClientSize = new Size(559, 708);
+            Controls.Add(eventosBtn);
+            Controls.Add(tablasBtn);
             Controls.Add(label8);
             Controls.Add(donacionesUbicacionTxt);
             Controls.Add(label7);
@@ -217,7 +236,6 @@
             Controls.Add(nombreDonacionTxt);
             Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(verTablasBtn);
             Name = "Admin";
             Text = "AGREGANDO - ADMIN";
             ResumeLayout(false);
@@ -243,5 +261,8 @@
         private TextBox recursosUbicacionTxt;
         private Label label8;
         private TextBox donacionesUbicacionTxt;
+        private Button tablaEventosBtn;
+        private Button tablasBtn;
+        private Button eventosBtn;
     }
 }

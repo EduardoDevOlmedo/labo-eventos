@@ -1,38 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\informatica\\source\\repos\\labo-eventos\\",
+  "WorkspaceRootPath": "C:\\Users\\eduar\\Desktop\\labo-eventos\\eventos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{487FF3A6-4840-41D8-97C7-D75CDE527E36}|eventos.csproj|c:\\users\\informatica\\source\\repos\\labo-eventos\\views\\operador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{487FF3A6-4840-41D8-97C7-D75CDE527E36}|eventos.csproj|solutionrelative:views\\operador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{487FF3A6-4840-41D8-97C7-D75CDE527E36}|eventos.csproj|c:\\users\\informatica\\source\\repos\\labo-eventos\\views\\operador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{487FF3A6-4840-41D8-97C7-D75CDE527E36}|eventos.csproj|c:\\users\\eduar\\desktop\\labo-eventos\\eventos\\views\\operador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{487FF3A6-4840-41D8-97C7-D75CDE527E36}|eventos.csproj|solutionrelative:views\\operador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{487FF3A6-4840-41D8-97C7-D75CDE527E36}|eventos.csproj|c:\\users\\informatica\\source\\repos\\labo-eventos\\views\\operador.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{487FF3A6-4840-41D8-97C7-D75CDE527E36}|eventos.csproj|solutionrelative:views\\operador.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{487FF3A6-4840-41D8-97C7-D75CDE527E36}|eventos.csproj|c:\\users\\eduar\\desktop\\labo-eventos\\eventos\\views\\eventos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{487FF3A6-4840-41D8-97C7-D75CDE527E36}|eventos.csproj|solutionrelative:views\\eventos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{487FF3A6-4840-41D8-97C7-D75CDE527E36}|eventos.csproj|c:\\users\\informatica\\source\\repos\\labo-eventos\\views\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{487FF3A6-4840-41D8-97C7-D75CDE527E36}|eventos.csproj|C:\\Users\\eduar\\Desktop\\labo-eventos\\eventos\\views\\eventos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{487FF3A6-4840-41D8-97C7-D75CDE527E36}|eventos.csproj|solutionrelative:views\\eventos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{487FF3A6-4840-41D8-97C7-D75CDE527E36}|eventos.csproj|c:\\users\\eduar\\desktop\\labo-eventos\\eventos\\views\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{487FF3A6-4840-41D8-97C7-D75CDE527E36}|eventos.csproj|solutionrelative:views\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{487FF3A6-4840-41D8-97C7-D75CDE527E36}|eventos.csproj|C:\\Users\\informatica\\source\\repos\\labo-eventos\\views\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{487FF3A6-4840-41D8-97C7-D75CDE527E36}|eventos.csproj|solutionrelative:views\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{487FF3A6-4840-41D8-97C7-D75CDE527E36}|eventos.csproj|c:\\users\\informatica\\source\\repos\\labo-eventos\\views\\login.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{487FF3A6-4840-41D8-97C7-D75CDE527E36}|eventos.csproj|solutionrelative:views\\login.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{487FF3A6-4840-41D8-97C7-D75CDE527E36}|eventos.csproj|c:\\users\\informatica\\source\\repos\\labo-eventos\\views\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{487FF3A6-4840-41D8-97C7-D75CDE527E36}|eventos.csproj|solutionrelative:views\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{487FF3A6-4840-41D8-97C7-D75CDE527E36}|eventos.csproj|C:\\Users\\informatica\\source\\repos\\labo-eventos\\views\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{487FF3A6-4840-41D8-97C7-D75CDE527E36}|eventos.csproj|solutionrelative:views\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,109 +26,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Login.cs",
-              "DocumentMoniker": "C:\\Users\\informatica\\source\\repos\\labo-eventos\\Views\\Login.cs",
-              "RelativeDocumentMoniker": "Views\\Login.cs",
-              "ToolTip": "C:\\Users\\informatica\\source\\repos\\labo-eventos\\Views\\Login.cs",
-              "RelativeToolTip": "Views\\Login.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAowA0AAAAfAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Operador.cs",
+              "DocumentMoniker": "C:\\Users\\eduar\\Desktop\\labo-eventos\\eventos\\Views\\Operador.cs",
+              "RelativeDocumentMoniker": "Views\\Operador.cs",
+              "ToolTip": "C:\\Users\\eduar\\Desktop\\labo-eventos\\eventos\\Views\\Operador.cs",
+              "RelativeToolTip": "Views\\Operador.cs",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAuwIUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T04:44:32.104Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Admin.cs",
-              "DocumentMoniker": "C:\\Users\\informatica\\source\\repos\\labo-eventos\\Views\\Admin.cs",
-              "RelativeDocumentMoniker": "Views\\Admin.cs",
-              "ToolTip": "C:\\Users\\informatica\\source\\repos\\labo-eventos\\Views\\Admin.cs",
-              "RelativeToolTip": "Views\\Admin.cs",
-              "ViewState": "AgIAAE0AAAAAAAAAAAAwwFoAAABEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T03:18:37.998Z",
-              "IsPinned": true,
+              "WhenOpened": "2024-10-17T07:42:54.121Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Operador.cs",
-              "DocumentMoniker": "C:\\Users\\informatica\\source\\repos\\labo-eventos\\Views\\Operador.cs",
-              "RelativeDocumentMoniker": "Views\\Operador.cs",
-              "ToolTip": "C:\\Users\\informatica\\source\\repos\\labo-eventos\\Views\\Operador.cs",
-              "RelativeToolTip": "Views\\Operador.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAwwBQAAAAiAAAAAAAAAA==",
+              "Title": "Eventos.cs",
+              "DocumentMoniker": "C:\\Users\\eduar\\Desktop\\labo-eventos\\eventos\\Views\\Eventos.cs",
+              "RelativeDocumentMoniker": "Views\\Eventos.cs",
+              "ToolTip": "C:\\Users\\eduar\\Desktop\\labo-eventos\\eventos\\Views\\Eventos.cs",
+              "RelativeToolTip": "Views\\Eventos.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAowBcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T22:23:43.116Z",
+              "WhenOpened": "2024-10-17T07:42:24.763Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Operador.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\informatica\\source\\repos\\labo-eventos\\Views\\Operador.cs",
-              "RelativeDocumentMoniker": "Views\\Operador.cs",
-              "ToolTip": "C:\\Users\\informatica\\source\\repos\\labo-eventos\\Views\\Operador.cs [Design]",
-              "RelativeToolTip": "Views\\Operador.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T23:23:40.794Z",
-              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Operador.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\informatica\\source\\repos\\labo-eventos\\Views\\Operador.Designer.cs",
-              "RelativeDocumentMoniker": "Views\\Operador.Designer.cs",
-              "ToolTip": "C:\\Users\\informatica\\source\\repos\\labo-eventos\\Views\\Operador.Designer.cs",
-              "RelativeToolTip": "Views\\Operador.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
+              "Title": "Eventos.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\eduar\\Desktop\\labo-eventos\\eventos\\Views\\Eventos.cs",
+              "RelativeDocumentMoniker": "Views\\Eventos.cs",
+              "ToolTip": "C:\\Users\\eduar\\Desktop\\labo-eventos\\eventos\\Views\\Eventos.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Views\\Eventos.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T22:10:06.335Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-17T07:32:31.029Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Login.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\informatica\\source\\repos\\labo-eventos\\Views\\Login.Designer.cs",
-              "RelativeDocumentMoniker": "Views\\Login.Designer.cs",
-              "ToolTip": "C:\\Users\\informatica\\source\\repos\\labo-eventos\\Views\\Login.Designer.cs",
-              "RelativeToolTip": "Views\\Login.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T04:45:20.993Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Admin.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\informatica\\source\\repos\\labo-eventos\\Views\\Admin.cs",
+              "DocumentIndex": 3,
+              "Title": "Admin.cs",
+              "DocumentMoniker": "C:\\Users\\eduar\\Desktop\\labo-eventos\\eventos\\Views\\Admin.cs",
               "RelativeDocumentMoniker": "Views\\Admin.cs",
-              "ToolTip": "C:\\Users\\informatica\\source\\repos\\labo-eventos\\Views\\Admin.cs [Design]",
-              "RelativeToolTip": "Views\\Admin.cs [Design]",
+              "ToolTip": "C:\\Users\\eduar\\Desktop\\labo-eventos\\eventos\\Views\\Admin.cs",
+              "RelativeToolTip": "Views\\Admin.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAwwDwAAABPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T22:10:25.405Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Login.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\informatica\\source\\repos\\labo-eventos\\Views\\Login.cs",
-              "RelativeDocumentMoniker": "Views\\Login.cs",
-              "ToolTip": "C:\\Users\\informatica\\source\\repos\\labo-eventos\\Views\\Login.cs [Design]",
-              "RelativeToolTip": "Views\\Login.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T04:44:29.169Z"
+              "WhenOpened": "2024-10-17T07:26:48.285Z",
+              "EditorCaption": ""
             }
           ]
         }
