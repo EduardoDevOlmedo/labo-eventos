@@ -13,10 +13,11 @@ namespace eventos.Views
 {
     public partial class Operador : Form
     {
-        private DataTable dataTable1, dataTable2;
-        private SqlDataAdapter sqlDataAdapter1, sqlDataAdapter2;
+        private DataTable dataTable1, dataTable2, dataTable3;
+        private SqlDataAdapter sqlDataAdapter1, sqlDataAdapter2, sqlDataAdapter3;
         private SqlConnection sqlConnection;
         private Eventos eventos;
+        private BindingSource bindingSource0, bindingSource2, bindingSource3;
         public Operador()
         {
             eventos = new Eventos();
@@ -25,7 +26,7 @@ namespace eventos.Views
         }
         public void GuardarInfo()
         {
-            if (dataTable1 == null || dataTable2 == null)
+            if (dataTable1 == null || dataTable2 == null || dataTable3 == null)
             {
                 return;
             }
@@ -41,6 +42,11 @@ namespace eventos.Views
                     sqlDataAdapter2.Update(dataTable2);
                     dataTable2.AcceptChanges();
                 }
+                if (dataTable3.GetChanges() != null)
+                {
+                    sqlDataAdapter3.Update(dataTable3);
+                    dataTable3.AcceptChanges();
+                }
             }
             catch (Exception ex)
             {
@@ -50,7 +56,7 @@ namespace eventos.Views
         }
         public void RefrescarInfo()
         {
-            if (dataTable1 == null || dataTable2 == null)
+            if (dataTable1 == null || dataTable2 == null || dataTable3 == null)
             {
                 return;
             }
@@ -60,6 +66,8 @@ namespace eventos.Views
                 sqlDataAdapter1.Fill(dataTable1);
                 dataTable2.Clear();
                 sqlDataAdapter2.Fill(dataTable2);
+                dataTable3.Clear();
+                sqlDataAdapter3.Fill(dataTable3);
             }
             catch (Exception ex)
             {
@@ -138,6 +146,7 @@ namespace eventos.Views
             string connectionString = @"Server=.\SQLEXPRESS;Database=CENTRO_ACOPIO;Integrated Security=True;";
             string query = "SELECT * FROM donacion";
             string recursosQuery = "SELECT * FROM recursos";
+            string solicitudesQuery = "SELECT * FROM solicitudes";
             sqlConnection = new SqlConnection(connectionString);
 
 
@@ -146,6 +155,9 @@ namespace eventos.Views
                 sqlConnection.Open();
                 sqlDataAdapter1 = new SqlDataAdapter(query, sqlConnection);
                 SqlCommandBuilder commandBuilder1 = new SqlCommandBuilder(sqlDataAdapter1);
+                bindingSource0 = new BindingSource();
+                bindingSource2 = new BindingSource();
+                bindingSource3 = new BindingSource();
                 dataTable1 = new DataTable();
                 sqlDataAdapter1.Fill(dataTable1);
                 dataGridView1.DataSource = dataTable1;
@@ -160,8 +172,27 @@ namespace eventos.Views
                 dataGridView2.Columns["idRecurso"].ReadOnly = true;
                 dataGridView2.AllowUserToAddRows = false;
                 AddCheckedColumn(dataGridView2, dataTable2, "activo");
+                sqlDataAdapter3 = new SqlDataAdapter(solicitudesQuery, sqlConnection);
+                SqlCommandBuilder commandbuilder3 = new SqlCommandBuilder(sqlDataAdapter3);
+                dataTable3 = new DataTable();
+                sqlDataAdapter3.Fill(dataTable3);
+                dataGridView3.DataSource = dataTable3;
+                dataGridView3.Columns["idSolicitud"].ReadOnly = true;
+                dataGridView3.AllowUserToAddRows = false;
+                AddCheckedColumn(dataGridView3, dataTable3, "atendida");
                 dataGridView1.CellBeginEdit += DataGridView_CellBeginEdit;
                 dataGridView2.CellBeginEdit += DataGridView_CellBeginEdit;
+                dataGridView3.CellBeginEdit += DataGridView3_CellBeginEdit;
+                bindingSource0.DataSource = dataTable1;
+                bindingSource2.DataSource = dataTable2;
+                bindingSource3.DataSource = dataTable3;
+                dataGridView1.DataSource = bindingSource0;
+                dataGridView2.DataSource = bindingSource2;
+                dataGridView3.DataSource = bindingSource3;
+                //comboBoxActivoFilter.Items.Add(new { Text = "Activa", Value = 1 });
+                //comboBoxActivoFilter.Items.Add(new { Text = "Inactiva", Value = 0 });
+                //comboBoxActivoFilter.DisplayMember = "Text";
+                //comboBoxActivoFilter.ValueMember = "Value";
             }
             catch (Exception ex)
             {
@@ -192,6 +223,10 @@ namespace eventos.Views
             else if (type.Equals("recurso", StringComparison.OrdinalIgnoreCase))
             {
                 deleteQuery = "DELETE FROM recursos WHERE idRecurso = @id";
+            }
+            else if (type.Equals("solicitud", StringComparison.OrdinalIgnoreCase))
+            {
+                deleteQuery = "DELETE FROM solicitudes WHERE idSolicitud = @id";
             }
             else
             {
@@ -225,6 +260,16 @@ namespace eventos.Views
                 e.Cancel = true;
             }
         }
+        private void DataGridView3_CellBeginEdit(object sender, DataGridViewCellCancelEventArgs e)
+        {
+            DataGridView dataGridView = sender as DataGridView;
+            if (dataGridView.Columns[e.ColumnIndex] is DataGridViewCheckBoxColumn) return;
+            bool isEditable = (bool)dataGridView.Rows[e.RowIndex].Cells["atendida"].Value;
+            if (!isEditable)
+            {
+                e.Cancel = true;
+            }
+        }
         private void RegistrarEvento(string nombreEvento, string tipoEvento)
         {
             string queryEvento = "INSERT INTO Eventos (nombreEvento, tipoEvento) VALUES (@nombreEvento, @tipoEvento)";
@@ -244,7 +289,7 @@ namespace eventos.Views
             }
         }
 
-        
+
         private void removeDonaciones_Click(object sender, EventArgs e)
         {
             deleteRowsFromTable(dataGridView1, dataTable1, "idDonacion", "donacion");
@@ -286,5 +331,143 @@ namespace eventos.Views
             }
         }
 
+        private void removeSolicitud_Click(object sender, EventArgs e)
+        {
+            deleteRowsFromTable(dataGridView3, dataTable3, "idSolicitud", "solicitud");
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (dataTable3.GetChanges() != null)
+                {
+                    PostEvent("nombreSolicitor", dataTable3, "solicitud");
+
+
+                    sqlDataAdapter3.Update(dataTable3);
+                    dataTable3.AcceptChanges();
+                    MessageBox.Show("Cambios a solicitudes guardados.");
+                }
+                else
+                {
+                    MessageBox.Show("No ha habido cambios.");
+                }
+                dataTable3.Clear();
+                sqlDataAdapter3.Fill(dataTable3);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message + "1");
+            }
+        }
+
+        private void AplicarFiltro1()
+        {
+            string nombreRecurso = textBoxNombreRecursoFilter.Text.Trim();
+            string cantidad = textBoxCantidadFilter.Text.Trim();
+            string ubicacion = textBoxUbicacionFilter.Text.Trim();
+            //bool? activo = comboBoxActivoFilter.SelectedValue as bool?;
+            string filterString = "";
+            if (!string.IsNullOrEmpty(nombreRecurso))
+            {
+                filterString += $"nombreRecurso LIKE '%{nombreRecurso}%'";
+            }
+            if (!string.IsNullOrEmpty(cantidad) && int.TryParse(cantidad, out _))
+            {
+                if (!string.IsNullOrEmpty(filterString)) filterString += " AND ";
+                filterString += $"cantidad = {cantidad}";
+            }
+            if (!string.IsNullOrEmpty(ubicacion))
+            {
+                if (!string.IsNullOrEmpty(filterString)) filterString += " AND ";
+                filterString += $"ubicacion LIKE '%{ubicacion}%'";
+            }
+            /*if (activo.HasValue)
+            {
+                if (!string.IsNullOrEmpty(filterString)) filterString += " AND ";
+                if (activo.Value) filterString += "activo = 1";
+                else filterString += "activo = 0";
+            }*/
+            bindingSource2.Filter = filterString;
+        }
+        private void AplicarFiltro2()
+        {
+            string nombreDonacion = textBoxNombreDonacionFilter.Text.Trim();
+            string ubicacion = textBoxUbicacion1Filter.Text.Trim();
+            string proveedor = textBoxProveedorFilter.Text.Trim();
+            string filterString = "";
+            if (!string.IsNullOrEmpty(nombreDonacion))
+            {
+                filterString += $"nombreDonacion LIKE '%{nombreDonacion}%'";
+            }
+            if (!string.IsNullOrEmpty(ubicacion))
+            {
+                if (!string.IsNullOrEmpty(filterString)) filterString += " AND ";
+                filterString += $"ubicacion LIKE '%{ubicacion}%'";
+            }
+            if (!string.IsNullOrEmpty(proveedor))
+            {
+                if (!string.IsNullOrEmpty(filterString)) filterString += " AND ";
+                filterString += $"proveedor LIKE '%{proveedor}%'";
+            }
+            bindingSource0.Filter = filterString;
+        }
+        private void AplicarFiltro3()
+        {
+            string nombreSolicitor = textBoxNombreSolicitorFilter.Text.Trim();
+            string urgencia = textBoxUrgenciaFilter.Text.Trim();
+            string filterString = "";
+            if (!string.IsNullOrEmpty(nombreSolicitor))
+            {
+                filterString += $"nombreSolicitor LIKE '%{nombreSolicitor}%'";
+            }
+            if (!string.IsNullOrEmpty(urgencia) && int.TryParse(urgencia, out _))
+            {
+                if (urgencia.Equals("1") || urgencia.Equals("2") || urgencia.Equals("3"))
+                {
+                    if (!string.IsNullOrEmpty(filterString)) filterString += " AND ";
+                    filterString += $"nivelUrgencia = {urgencia}";
+                }
+            }
+            bindingSource3.Filter = filterString;
+        }
+        private void button3_Click(object sender, EventArgs e)
+        {
+            AplicarFiltro1();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            textBoxCantidadFilter.Clear();
+            textBoxNombreRecursoFilter.Clear();
+            textBoxUbicacionFilter.Clear();
+            bindingSource2.Filter = "";
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            AplicarFiltro2();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            textBoxUbicacion1Filter.Clear();
+            textBoxNombreDonacionFilter.Clear();
+            textBoxProveedorFilter.Clear();
+            bindingSource0.Filter = "";
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            AplicarFiltro3();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            textBoxUrgenciaFilter.Clear();
+            textBoxNombreSolicitorFilter.Clear();
+            bindingSource3.Filter = "";
+        }
     }
 }

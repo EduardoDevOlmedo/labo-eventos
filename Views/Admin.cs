@@ -58,8 +58,8 @@ namespace eventos.Views
 
                             using (SqlCommand eventCommand = new SqlCommand(eventosQuery, connection, transaction))
                             {
-                                eventCommand.Parameters.AddWithValue("@nombreEvento", $"RECURSO: {nombreRecurso}"); 
-                                eventCommand.Parameters.AddWithValue("@tipoEvento", "Agregar");  
+                                eventCommand.Parameters.AddWithValue("@nombreEvento", $"RECURSO: {nombreRecurso}");
+                                eventCommand.Parameters.AddWithValue("@tipoEvento", "Agregar");
                                 eventCommand.ExecuteNonQuery();
                             }
 
@@ -126,7 +126,7 @@ namespace eventos.Views
                             using (SqlCommand eventCommand = new SqlCommand(eventosQuery, connection, transaction))
                             {
                                 eventCommand.Parameters.AddWithValue("@nombreEvento", $"DONACION: {nombreDonacion}");
-                                eventCommand.Parameters.AddWithValue("@tipoEvento", "Agregar"); 
+                                eventCommand.Parameters.AddWithValue("@tipoEvento", "Agregar");
                                 eventCommand.ExecuteNonQuery();
                             }
 
@@ -168,11 +168,86 @@ namespace eventos.Views
         {
             if (operador != null)
             {
-                operador.Hide();
+                //operador.Hide();
             }
 
             Eventos eventos = new Eventos();
             eventos.Show();
+        }
+
+        private void agregarSolicitud_Click(object sender, EventArgs e)
+        {
+            string namesolicitud = nameSolicitor.Text;
+            string especificaciones = especificacionesSolicitud.Text;
+            int value = 1;
+            if (bajaPrioridad.Checked)
+            {
+                value = 1;
+            }
+            if (mediaPrioridad.Checked)
+            {
+                value = 2;
+            }
+            if (altaPrioridad.Checked)
+            {
+                value = 3;
+            }
+            if (string.IsNullOrEmpty(namesolicitud) || string.IsNullOrEmpty(especificaciones))
+            {
+                MessageBox.Show("Por favor, ingrese todos los campos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            int atendida = 0;
+            string connectionString = @"Server=.\SQLEXPRESS;Database=CENTRO_ACOPIO;Integrated Security=True;";
+            string donacionQuery = "INSERT INTO Solicitudes (nombreSolicitor, nivelUrgencia, atendida, especificacion) VALUES (@namesolicitud, @value, @atendida, @especificaciones)";
+            string eventosQuery = "INSERT INTO Eventos(nombreEvento, tipoEvento) VALUES(@nombreEvento, @tipoEvento)";
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                try
+                {
+                    connection.Open();
+
+                    using (SqlTransaction transaction = connection.BeginTransaction())
+                    {
+                        try
+                        {
+                            using (SqlCommand command = new SqlCommand(donacionQuery, connection, transaction))
+                            {
+                                command.Parameters.AddWithValue("@namesolicitud", namesolicitud);
+                                command.Parameters.AddWithValue("@value", value);
+                                command.Parameters.AddWithValue("@atendida", atendida);
+                                command.Parameters.AddWithValue("@especificaciones", especificaciones);
+                                command.ExecuteNonQuery();
+                            }
+
+                            using (SqlCommand eventCommand = new SqlCommand(eventosQuery, connection, transaction))
+                            {
+                                eventCommand.Parameters.AddWithValue("@nombreEvento", $"SOLICITUD: {namesolicitud}");
+                                eventCommand.Parameters.AddWithValue("@tipoEvento", "Agregar");
+                                eventCommand.ExecuteNonQuery();
+                            }
+
+                            transaction.Commit();
+
+                            MessageBox.Show("Solicitud y evento agregados exitosamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                            nombreDonacionTxt.Clear();
+                            proveedorTxt.Clear();
+                            donacionesUbicacionTxt.Clear();
+                            operador.RefrescarInfo();
+                        }
+                        catch (Exception ex)
+                        {
+                            transaction.Rollback();
+                            MessageBox.Show($"Error al agregar la solicitud o evento: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error de conexión: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
     }
 }

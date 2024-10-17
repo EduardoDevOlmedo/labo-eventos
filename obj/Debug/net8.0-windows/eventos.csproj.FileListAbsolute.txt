@@ -53,3 +53,4 @@ C:\Users\informatica\Source\Repos\labo-eventos\obj\Debug\net8.0-windows\eventos.
 C:\Users\informatica\Source\Repos\labo-eventos\obj\Debug\net8.0-windows\ref\eventos.dll
 C:\Users\eduar\Desktop\labo-eventos\eventos\obj\Debug\net8.0-windows\eventos.Views.Operador.resources
 C:\Users\eduar\Desktop\labo-eventos\eventos\obj\Debug\net8.0-windows\eventos.Views.Eventos.resources
+C:\Users\informatica\Source\Repos\labo-eventos\obj\Debug\net8.0-windows\eventos.Views.Eventos.resources

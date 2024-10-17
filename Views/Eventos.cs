@@ -54,5 +54,17 @@ namespace eventos.Views
                 }
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                eventosTable.Clear();
+                eventosAdapter.Fill(eventosTable);
+            }
+            catch (Exception ex) { 
+                MessageBox.Show (ex.ToString());
+            }
+        }
     }
 }
