@@ -8,7 +8,7 @@ namespace eventos.Views
     public partial class Eventos : Form
     {
         private SqlDataAdapter eventosAdapter;
-        private DataTable eventosTable;
+        public DataTable eventosTable;
         private SqlConnection sqlConnection;
 
         private string connectionString = @"Server=.\SQLEXPRESS;Database=CENTRO_ACOPIO;Integrated Security=True;";

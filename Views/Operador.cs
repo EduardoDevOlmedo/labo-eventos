@@ -80,7 +80,7 @@ namespace eventos.Views
             {
                 if (dataTable2.GetChanges() != null)
                 {
-                    PostEvent("nombreRecurso", dataTable2, "recurso");
+                    PostEvent(dataTable2, "recurso");
 
                     sqlDataAdapter2.Update(dataTable2);
                     dataTable2.AcceptChanges();
@@ -105,7 +105,7 @@ namespace eventos.Views
             {
                 if (dataTable1.GetChanges() != null)
                 {
-                    PostEvent("nombreDonacion", dataTable1, "donacion");
+                    PostEvent(dataTable1, "donacion");
 
 
                     sqlDataAdapter1.Update(dataTable1);
@@ -124,17 +124,22 @@ namespace eventos.Views
                 MessageBox.Show(ex.Message);
             }
         }
-
-        public void PostEvent(string columnName, DataTable dataTable, string tipo)
+        public void PostEvent(DataTable dataTable, string tipo)
         {
             foreach (DataRow row in dataTable.Rows)
             {
                 if (row.RowState == DataRowState.Modified)
                 {
-                    if (row[columnName, DataRowVersion.Original].ToString() != row[columnName, DataRowVersion.Current].ToString())
+                    foreach (DataColumn column in dataTable.Columns)
                     {
-                        string columnValue = row[columnName].ToString();
-                        RegistrarEvento($"{tipo.ToUpper()} Actualizado: {columnValue}", "Actualizar");
+                        string columnName = column.ColumnName;
+
+                        if (!row[columnName, DataRowVersion.Original].Equals(row[columnName, DataRowVersion.Current]))
+                        {
+                            string currentValue = row[columnName, DataRowVersion.Current].ToString();
+                            string eventMessage = $"{tipo.ToUpper()} {columnName} {currentValue}'";
+                            RegistrarEvento(eventMessage, "Actualizar");
+                        }
                     }
                 }
             }
@@ -342,7 +347,7 @@ namespace eventos.Views
             {
                 if (dataTable3.GetChanges() != null)
                 {
-                    PostEvent("nombreSolicitor", dataTable3, "solicitud");
+                    PostEvent(dataTable3, "solicitud");
 
 
                     sqlDataAdapter3.Update(dataTable3);
@@ -367,7 +372,6 @@ namespace eventos.Views
             string nombreRecurso = textBoxNombreRecursoFilter.Text.Trim();
             string cantidad = textBoxCantidadFilter.Text.Trim();
             string ubicacion = textBoxUbicacionFilter.Text.Trim();
-            //bool? activo = comboBoxActivoFilter.SelectedValue as bool?;
             string filterString = "";
             if (!string.IsNullOrEmpty(nombreRecurso))
             {
@@ -383,12 +387,6 @@ namespace eventos.Views
                 if (!string.IsNullOrEmpty(filterString)) filterString += " AND ";
                 filterString += $"ubicacion LIKE '%{ubicacion}%'";
             }
-            /*if (activo.HasValue)
-            {
-                if (!string.IsNullOrEmpty(filterString)) filterString += " AND ";
-                if (activo.Value) filterString += "activo = 1";
-                else filterString += "activo = 0";
-            }*/
             bindingSource2.Filter = filterString;
         }
         private void AplicarFiltro2()
@@ -468,6 +466,45 @@ namespace eventos.Views
             textBoxUrgenciaFilter.Clear();
             textBoxNombreSolicitorFilter.Clear();
             bindingSource3.Filter = "";
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            string title = "Reporte de recursos";
+            GenerarPDF pdf = new GenerarPDF(title, dataTable2);
+            pdf.CrearPDF();
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+
+            string title = "Reporte de donaciones";
+            GenerarPDF pdf = new GenerarPDF(title, dataTable1);
+            pdf.CrearPDF();
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            string title = "Reporte de solicitudes";
+            GenerarPDF pdf = new GenerarPDF(title, dataTable3);
+            pdf.CrearPDF();
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            DataTable table = eventos.eventosTable;
+            GenerarPDF pdfEventos = new GenerarPDF("Reporte de eventos", table);
+            pdfEventos.generarPDFEventos();
+        }
+
+        private void salir(object sender, EventArgs e){
+            Application.Exit();
+        }
+
+        private void mostrarIntegrantes(object sender, EventArgs e)
+        {
+            Integrantes integrantes = new Integrantes();
+            integrantes.Show();
         }
     }
 }
