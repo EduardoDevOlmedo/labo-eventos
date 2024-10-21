@@ -3,24 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\informatica\\source\\repos\\labo-eventos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{487FF3A6-4840-41D8-97C7-D75CDE527E36}|eventos.csproj|c:\\users\\informatica\\source\\repos\\labo-eventos\\views\\operador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{487FF3A6-4840-41D8-97C7-D75CDE527E36}|eventos.csproj|solutionrelative:views\\operador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{487FF3A6-4840-41D8-97C7-D75CDE527E36}|eventos.csproj|C:\\Users\\informatica\\source\\repos\\labo-eventos\\views\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{487FF3A6-4840-41D8-97C7-D75CDE527E36}|eventos.csproj|solutionrelative:views\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{487FF3A6-4840-41D8-97C7-D75CDE527E36}|eventos.csproj|c:\\users\\informatica\\source\\repos\\labo-eventos\\views\\eventos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{487FF3A6-4840-41D8-97C7-D75CDE527E36}|eventos.csproj|solutionrelative:views\\eventos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{487FF3A6-4840-41D8-97C7-D75CDE527E36}|eventos.csproj|C:\\Users\\informatica\\source\\repos\\labo-eventos\\views\\operador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{487FF3A6-4840-41D8-97C7-D75CDE527E36}|eventos.csproj|solutionrelative:views\\operador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{487FF3A6-4840-41D8-97C7-D75CDE527E36}|eventos.csproj|c:\\users\\informatica\\source\\repos\\labo-eventos\\views\\operador.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{487FF3A6-4840-41D8-97C7-D75CDE527E36}|eventos.csproj|solutionrelative:views\\operador.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{487FF3A6-4840-41D8-97C7-D75CDE527E36}|eventos.csproj|c:\\users\\informatica\\source\\repos\\labo-eventos\\views\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{487FF3A6-4840-41D8-97C7-D75CDE527E36}|eventos.csproj|solutionrelative:views\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{487FF3A6-4840-41D8-97C7-D75CDE527E36}|eventos.csproj|c:\\users\\informatica\\source\\repos\\labo-eventos\\views\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{487FF3A6-4840-41D8-97C7-D75CDE527E36}|eventos.csproj|solutionrelative:views\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{487FF3A6-4840-41D8-97C7-D75CDE527E36}|eventos.csproj|C:\\Users\\informatica\\source\\repos\\labo-eventos\\views\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{487FF3A6-4840-41D8-97C7-D75CDE527E36}|eventos.csproj|solutionrelative:views\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{487FF3A6-4840-41D8-97C7-D75CDE527E36}|eventos.csproj|c:\\users\\informatica\\source\\repos\\labo-eventos\\views\\operador.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{487FF3A6-4840-41D8-97C7-D75CDE527E36}|eventos.csproj|solutionrelative:views\\operador.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{487FF3A6-4840-41D8-97C7-D75CDE527E36}|eventos.csproj|c:\\users\\informatica\\source\\repos\\labo-eventos\\views\\admin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,20 +39,8 @@
       "RelativeMoniker": "D:0:0:{487FF3A6-4840-41D8-97C7-D75CDE527E36}|eventos.csproj|solutionrelative:views\\login.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{487FF3A6-4840-41D8-97C7-D75CDE527E36}|eventos.csproj|c:\\users\\informatica\\source\\repos\\labo-eventos\\views\\eventos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{487FF3A6-4840-41D8-97C7-D75CDE527E36}|eventos.csproj|solutionrelative:views\\eventos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{487FF3A6-4840-41D8-97C7-D75CDE527E36}|eventos.csproj|C:\\Users\\informatica\\source\\repos\\labo-eventos\\views\\eventos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{487FF3A6-4840-41D8-97C7-D75CDE527E36}|eventos.csproj|solutionrelative:views\\eventos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{487FF3A6-4840-41D8-97C7-D75CDE527E36}|eventos.csproj|C:\\Users\\informatica\\source\\repos\\labo-eventos\\views\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{487FF3A6-4840-41D8-97C7-D75CDE527E36}|eventos.csproj|solutionrelative:views\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{487FF3A6-4840-41D8-97C7-D75CDE527E36}|eventos.csproj|c:\\users\\informatica\\source\\repos\\labo-eventos\\views\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{487FF3A6-4840-41D8-97C7-D75CDE527E36}|eventos.csproj|solutionrelative:views\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,17 +50,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 4,
               "Title": "Login.cs",
               "DocumentMoniker": "C:\\Users\\informatica\\source\\repos\\labo-eventos\\Views\\Login.cs",
               "RelativeDocumentMoniker": "Views\\Login.cs",
               "ToolTip": "C:\\Users\\informatica\\source\\repos\\labo-eventos\\Views\\Login.cs",
               "RelativeToolTip": "Views\\Login.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAUwBIAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAADkAAAAAAAAAAAAowEoAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-16T04:44:32.104Z",
               "IsPinned": true,
@@ -78,7 +74,7 @@
               "RelativeDocumentMoniker": "Views\\Admin.cs",
               "ToolTip": "C:\\Users\\informatica\\source\\repos\\labo-eventos\\Views\\Admin.cs",
               "RelativeToolTip": "Views\\Admin.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAA7wBYAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAUBAAAAAAAAAAAmwC4AAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-17T03:18:37.998Z",
               "IsPinned": true,
@@ -86,7 +82,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Admin.cs [Design]",
               "DocumentMoniker": "C:\\Users\\informatica\\source\\repos\\labo-eventos\\Views\\Admin.cs",
               "RelativeDocumentMoniker": "Views\\Admin.cs",
@@ -94,56 +90,45 @@
               "RelativeToolTip": "Views\\Admin.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-17T14:50:32.595Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Operador.cs",
-              "DocumentMoniker": "C:\\Users\\informatica\\source\\repos\\labo-eventos\\Views\\Operador.cs",
-              "RelativeDocumentMoniker": "Views\\Operador.cs",
-              "ToolTip": "C:\\Users\\informatica\\source\\repos\\labo-eventos\\Views\\Operador.cs",
-              "RelativeToolTip": "Views\\Operador.cs",
-              "ViewState": "AgIAAN8BAAAAAAAAAAAuwKIBAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T22:23:43.116Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Bookmark",
               "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Operador.cs [Design]",
               "DocumentMoniker": "C:\\Users\\informatica\\source\\repos\\labo-eventos\\Views\\Operador.cs",
               "RelativeDocumentMoniker": "Views\\Operador.cs",
               "ToolTip": "C:\\Users\\informatica\\source\\repos\\labo-eventos\\Views\\Operador.cs [Design]",
               "RelativeToolTip": "Views\\Operador.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T20:17:46.724Z"
+              "WhenOpened": "2024-10-17T20:17:46.724Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "Operador.Designer.cs",
               "DocumentMoniker": "C:\\Users\\informatica\\source\\repos\\labo-eventos\\Views\\Operador.Designer.cs",
               "RelativeDocumentMoniker": "Views\\Operador.Designer.cs",
               "ToolTip": "C:\\Users\\informatica\\source\\repos\\labo-eventos\\Views\\Operador.Designer.cs",
               "RelativeToolTip": "Views\\Operador.Designer.cs",
-              "ViewState": "AgIAANwAAAAAAAAAAAAAAIcBAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T18:51:07.809Z"
+              "WhenOpened": "2024-10-17T18:51:07.809Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Admin.Designer.cs",
               "DocumentMoniker": "C:\\Users\\informatica\\source\\repos\\labo-eventos\\Views\\Admin.Designer.cs",
               "RelativeDocumentMoniker": "Views\\Admin.Designer.cs",
@@ -151,11 +136,12 @@
               "RelativeToolTip": "Views\\Admin.Designer.cs",
               "ViewState": "AgIAACUBAAAAAAAAAAAAADYBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T14:47:59.086Z"
+              "WhenOpened": "2024-10-17T14:47:59.086Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Login.Designer.cs",
               "DocumentMoniker": "C:\\Users\\informatica\\source\\repos\\labo-eventos\\Views\\Login.Designer.cs",
               "RelativeDocumentMoniker": "Views\\Login.Designer.cs",
@@ -163,42 +149,45 @@
               "RelativeToolTip": "Views\\Login.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T04:45:20.993Z"
+              "WhenOpened": "2024-10-16T04:45:20.993Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
               "Title": "Eventos.cs",
               "DocumentMoniker": "C:\\Users\\informatica\\source\\repos\\labo-eventos\\Views\\Eventos.cs",
               "RelativeDocumentMoniker": "Views\\Eventos.cs",
               "ToolTip": "C:\\Users\\informatica\\source\\repos\\labo-eventos\\Views\\Eventos.cs",
               "RelativeToolTip": "Views\\Eventos.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAqwEMAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEMAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-17T14:15:39.28Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Eventos.cs [Design]",
               "DocumentMoniker": "C:\\Users\\informatica\\source\\repos\\labo-eventos\\Views\\Eventos.cs",
               "RelativeDocumentMoniker": "Views\\Eventos.cs",
               "ToolTip": "C:\\Users\\informatica\\source\\repos\\labo-eventos\\Views\\Eventos.cs [Design]",
               "RelativeToolTip": "Views\\Eventos.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T14:18:17.669Z"
+              "WhenOpened": "2024-10-17T14:18:17.669Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 0,
               "Title": "Login.cs [Design]",
               "DocumentMoniker": "C:\\Users\\informatica\\source\\repos\\labo-eventos\\Views\\Login.cs",
               "RelativeDocumentMoniker": "Views\\Login.cs",
               "ToolTip": "C:\\Users\\informatica\\source\\repos\\labo-eventos\\Views\\Login.cs [Design]",
               "RelativeToolTip": "Views\\Login.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T04:44:29.169Z"
+              "WhenOpened": "2024-10-16T04:44:29.169Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

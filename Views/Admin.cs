@@ -44,7 +44,7 @@ namespace eventos.Views
             string query = "INSERT INTO recursos (nombreRecurso, Cantidad, ubicacion, activo) VALUES (@nombreRecurso, @cantidadRecurso, @ubicacion, @activo)";
             string eventosQuery = "INSERT INTO Eventos(nombreEvento, tipoEvento) VALUES(@nombreEvento, @tipoEvento)";
 
-            // Se establece la conexión con la base de datos.
+            // Se establece la conexión con la base de datos
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 try
@@ -74,7 +74,7 @@ namespace eventos.Views
                                 eventCommand.ExecuteNonQuery(); 
                             }
 
-                            transaction.Commit(); // Confirma la transacción.
+                            transaction.Commit(); // Confirma la transacción
 
                             
                             MessageBox.Show("Recurso y evento agregados exitosamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -85,7 +85,7 @@ namespace eventos.Views
                         }
                         catch (Exception ex)
                         {
-                            // En caso de error, se revierte la transacción.
+                            // En caso de error, se revierte la transacción
                             transaction.Rollback();
                             MessageBox.Show($"Error al insertar el recurso o evento: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
@@ -93,13 +93,13 @@ namespace eventos.Views
                 }
                 catch (Exception ex)
                 {
-                    // Maneja los errores de conexión.
+                    // Maneja los errores de conexión
                     MessageBox.Show($"Error de conexión: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
 
-        // Evento que se activa al hacer clic en el botón para agregar una donación.
+        // Evento que se activa al hacer clic en el botón para agregar una donación
         private void AgregarDonacionBtn_Click(object sender, EventArgs e)
         {
             
@@ -117,11 +117,11 @@ namespace eventos.Views
            
             string connectionString = @"Server=.\SQLEXPRESS;Database=CENTRO_ACOPIO;Integrated Security=True;";
 
-            // Consulta SQL para insertar la donación y el evento asociado.
+            // Consulta SQL para insertar la donación y el evento asociado
             string donacionQuery = "INSERT INTO Donacion (nombreDonacion, proveedor, ubicacion, activo) VALUES (@nombreDonacion, @proveedor, @ubicacion, @activo)";
             string eventosQuery = "INSERT INTO Eventos(nombreEvento, tipoEvento) VALUES(@nombreEvento, @tipoEvento)";
 
-            // Se establece la conexión con la base de datos.
+            // Se establece la conexión con la base de datos
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 try
@@ -138,8 +138,8 @@ namespace eventos.Views
                                 command.Parameters.AddWithValue("@nombreDonacion", nombreDonacion);
                                 command.Parameters.AddWithValue("@proveedor", proveedor);
                                 command.Parameters.AddWithValue("@ubicacion", ubicacion);
-                                command.Parameters.AddWithValue("@activo", 1);// El recurso se marca como activo
-                                command.ExecuteNonQuery(); // Ejecuta el comando.
+                                command.Parameters.AddWithValue("@activo", 1);
+                                command.ExecuteNonQuery(); // Ejecuta el comando
                             }
 
                             
@@ -149,7 +149,7 @@ namespace eventos.Views
                                 eventCommand.Parameters.AddWithValue("@tipoEvento", "Agregar");
                                 eventCommand.ExecuteNonQuery(); 
 
-                            transaction.Commit(); // Confirma la transacción.
+                            transaction.Commit(); // Confirma la transacción
                             }
                             
                             MessageBox.Show("Donación y evento agregados exitosamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -160,7 +160,7 @@ namespace eventos.Views
                         }
                         catch (Exception ex)
                         {
-                            // En caso de error, se revierte la transacción.
+                            // En caso de error, se revierte la transacción
                             transaction.Rollback();
                             MessageBox.Show($"Error al agregar la donación o evento: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
@@ -168,7 +168,7 @@ namespace eventos.Views
                 }
                 catch (Exception ex)
                 {
-                    // Maneja los errores de conexión.
+                    // Maneja los errores de conexión
                     MessageBox.Show($"Error de conexión: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
@@ -221,7 +221,6 @@ namespace eventos.Views
 
             int atendida = 0; 
 
-            // Cadena de conexión a la base de datos.
             string connectionString = @"Server=.\SQLEXPRESS;Database=CENTRO_ACOPIO;Integrated Security=True;";
 
            
@@ -257,7 +256,7 @@ namespace eventos.Views
                                 eventCommand.ExecuteNonQuery(); 
                             }
 
-                            transaction.Commit(); // Confirma la transacción.
+                            transaction.Commit(); //confirma la transacción
 
                            
                             MessageBox.Show("Solicitud y evento agregados exitosamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -267,7 +266,7 @@ namespace eventos.Views
                         }
                         catch (Exception ex)
                         {
-                            // En caso de error, se revierte la transacción.
+                            // En caso de error, se revierte la transacción
                             transaction.Rollback();
                             MessageBox.Show($"Error al agregar la solicitud o evento: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
@@ -275,7 +274,7 @@ namespace eventos.Views
                 }
                 catch (Exception ex)
                 {
-                    // Maneja los errores de conexión.
+                    // Maneja los errores de conexión
                     MessageBox.Show($"Error de conexión: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                     return;

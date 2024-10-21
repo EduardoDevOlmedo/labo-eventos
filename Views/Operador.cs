@@ -221,10 +221,6 @@ namespace eventos.Views
                 dataGridView1.DataSource = bindingSource0;
                 dataGridView2.DataSource = bindingSource2;
                 dataGridView3.DataSource = bindingSource3;
-                //comboBoxActivoFilter.Items.Add(new { Text = "Activa", Value = 1 });
-                //comboBoxActivoFilter.Items.Add(new { Text = "Inactiva", Value = 0 });
-                //comboBoxActivoFilter.DisplayMember = "Text";
-                //comboBoxActivoFilter.ValueMember = "Value";
             }
             catch (Exception ex)
             {
