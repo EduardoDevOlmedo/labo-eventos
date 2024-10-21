@@ -15,9 +15,9 @@
         {
             if (disposing && (components != null))
             {
-                components.Dispose();
+                components.Dispose(); // Liberar recursos si existen.
             }
-            base.Dispose(disposing);
+            base.Dispose(disposing); // Llama a la base para limpiar.
         }
 
         #region Windows Form Designer generated code
@@ -32,12 +32,12 @@
             // 
             // MainForm
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Name = "MainForm";
-            Text = "MainForm";
-            ResumeLayout(false);
+            AutoScaleDimensions = new SizeF(8F, 20F); // Configura la escala automática del formulario.
+            AutoScaleMode = AutoScaleMode.Font; // Define el modo de escala.
+            ClientSize = new Size(800, 450); // Tamaño del formulario.
+            Name = "MainForm"; // Nombre del formulario.
+            Text = "MainForm"; // Título que aparece en la ventana.
+            ResumeLayout(false); // Reanuda el diseño.
         }
 
         #endregion
