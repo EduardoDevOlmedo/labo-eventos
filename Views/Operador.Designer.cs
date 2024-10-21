@@ -617,4 +617,4 @@ namespace eventos.Views
         private ToolStripMenuItem verIntegrantesToolStripMenuItem;
         private ToolStripMenuItem salirToolStripMenuItem;
     }
-}
+} //actualizar
