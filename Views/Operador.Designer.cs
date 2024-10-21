@@ -7,12 +7,14 @@ namespace eventos.Views
         /// <summary>
         /// Required designer variable.
         /// </summary>
+        // Componentes del formulario
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
         /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        // Método para liberar recursos
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -28,6 +30,7 @@ namespace eventos.Views
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
+        // Inicializa componentes y establece propiedades
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
@@ -133,7 +136,7 @@ namespace eventos.Views
             label1.Name = "label1";
             label1.Size = new Size(107, 32);
             label1.TabIndex = 4;
-            label1.Text = "Recursos";
+            label1.Text = "Recursos"; // Título de la sección Recursos
             // 
             // label2
             // 
@@ -143,7 +146,7 @@ namespace eventos.Views
             label2.Name = "label2";
             label2.Size = new Size(139, 32);
             label2.TabIndex = 5;
-            label2.Text = "Donaciones";
+            label2.Text = "Donaciones"; // Título de la sección Donaciones
             // 
             // removeRecursos
             // 
@@ -152,7 +155,7 @@ namespace eventos.Views
             removeRecursos.Name = "removeRecursos";
             removeRecursos.Size = new Size(338, 31);
             removeRecursos.TabIndex = 6;
-            removeRecursos.Text = "Eliminar recursos seleccionados";
+            removeRecursos.Text = "Eliminar recursos seleccionados"; // Botón para eliminar recursos
             removeRecursos.UseVisualStyleBackColor = true;
             removeRecursos.Click += removeRecursos_Click;
             // 
@@ -163,7 +166,7 @@ namespace eventos.Views
             removeDonaciones.Name = "removeDonaciones";
             removeDonaciones.Size = new Size(347, 31);
             removeDonaciones.TabIndex = 7;
-            removeDonaciones.Text = "Eliminar donaciones seleccionadas";
+            removeDonaciones.Text = "Eliminar donaciones seleccionadas"; // Botón para eliminar donaciones
             removeDonaciones.UseVisualStyleBackColor = true;
             removeDonaciones.Click += removeDonaciones_Click;
             // 
@@ -195,7 +198,7 @@ namespace eventos.Views
             removeSolicitud.Name = "removeSolicitud";
             removeSolicitud.Size = new Size(341, 31);
             removeSolicitud.TabIndex = 10;
-            removeSolicitud.Text = "Eliminar solicitudes seleccionadas";
+            removeSolicitud.Text = "Eliminar solicitudes seleccionadas"; // Botón para eliminar solicitudes
             removeSolicitud.UseVisualStyleBackColor = true;
             removeSolicitud.Click += removeSolicitud_Click;
             // 
@@ -206,7 +209,7 @@ namespace eventos.Views
             button4.Name = "button4";
             button4.Size = new Size(334, 31);
             button4.TabIndex = 11;
-            button4.Text = "Guardar cambios solicitudes";
+            button4.Text = "Guardar cambios solicitudes"; // Botón para guardar cambios en solicitudes
             button4.UseVisualStyleBackColor = true;
             button4.Click += button4_Click;
             // 
@@ -216,7 +219,7 @@ namespace eventos.Views
             textBoxNombreRecursoFilter.Margin = new Padding(3, 4, 3, 4);
             textBoxNombreRecursoFilter.Name = "textBoxNombreRecursoFilter";
             textBoxNombreRecursoFilter.Size = new Size(114, 27);
-            textBoxNombreRecursoFilter.TabIndex = 13;
+            textBoxNombreRecursoFilter.TabIndex = 13; // Campo para filtrar por nombre de recurso
             // 
             // textBoxCantidadFilter
             // 
@@ -224,7 +227,7 @@ namespace eventos.Views
             textBoxCantidadFilter.Margin = new Padding(3, 4, 3, 4);
             textBoxCantidadFilter.Name = "textBoxCantidadFilter";
             textBoxCantidadFilter.Size = new Size(114, 27);
-            textBoxCantidadFilter.TabIndex = 14;
+            textBoxCantidadFilter.TabIndex = 14; // Campo para filtrar por cantidad
             // 
             // textBoxUbicacionFilter
             // 
@@ -232,7 +235,7 @@ namespace eventos.Views
             textBoxUbicacionFilter.Margin = new Padding(3, 4, 3, 4);
             textBoxUbicacionFilter.Name = "textBoxUbicacionFilter";
             textBoxUbicacionFilter.Size = new Size(114, 27);
-            textBoxUbicacionFilter.TabIndex = 15;
+            textBoxUbicacionFilter.TabIndex = 15; // Campo para filtrar por ubicación
             // 
             // button3
             // 
@@ -241,7 +244,7 @@ namespace eventos.Views
             button3.Name = "button3";
             button3.Size = new Size(86, 55);
             button3.TabIndex = 17;
-            button3.Text = "Aplicar Filtro";
+            button3.Text = "Aplicar Filtro"; // Botón para aplicar filtro
             button3.UseVisualStyleBackColor = true;
             button3.Click += button3_Click;
             // 
@@ -252,7 +255,7 @@ namespace eventos.Views
             button5.Name = "button5";
             button5.Size = new Size(86, 56);
             button5.TabIndex = 18;
-            button5.Text = "Limpiar Filtros";
+            button5.Text = "Limpiar Filtros"; // Botón para limpiar filtros
             button5.UseVisualStyleBackColor = true;
             button5.Click += button5_Click;
             // 
@@ -262,7 +265,7 @@ namespace eventos.Views
             textBoxUbicacion1Filter.Margin = new Padding(3, 4, 3, 4);
             textBoxUbicacion1Filter.Name = "textBoxUbicacion1Filter";
             textBoxUbicacion1Filter.Size = new Size(114, 27);
-            textBoxUbicacion1Filter.TabIndex = 21;
+            textBoxUbicacion1Filter.TabIndex = 21; // Campo para filtrar por ubicación de donaciones
             // 
             // textBoxProveedorFilter
             // 
@@ -270,7 +273,7 @@ namespace eventos.Views
             textBoxProveedorFilter.Margin = new Padding(3, 4, 3, 4);
             textBoxProveedorFilter.Name = "textBoxProveedorFilter";
             textBoxProveedorFilter.Size = new Size(114, 27);
-            textBoxProveedorFilter.TabIndex = 20;
+            textBoxProveedorFilter.TabIndex = 20; // Campo para filtrar por proveedor de donaciones
             // 
             // textBoxNombreDonacionFilter
             // 
@@ -278,7 +281,7 @@ namespace eventos.Views
             textBoxNombreDonacionFilter.Margin = new Padding(3, 4, 3, 4);
             textBoxNombreDonacionFilter.Name = "textBoxNombreDonacionFilter";
             textBoxNombreDonacionFilter.Size = new Size(114, 27);
-            textBoxNombreDonacionFilter.TabIndex = 19;
+            textBoxNombreDonacionFilter.TabIndex = 19; // Campo para filtrar por nombre de donación
             // 
             // button6
             // 
@@ -287,18 +290,18 @@ namespace eventos.Views
             button6.Name = "button6";
             button6.Size = new Size(86, 56);
             button6.TabIndex = 23;
-            button6.Text = "Limpiar Filtros";
+            button6.Text = "Limpiar Filtros"; // Botón para limpiar filtros de donaciones
             button6.UseVisualStyleBackColor = true;
             button6.Click += button6_Click;
             // 
             // button7
-            // 
+            // Configuración de botones para aplicar y limpiar filtros
             button7.Location = new Point(697, 478);
             button7.Margin = new Padding(3, 4, 3, 4);
             button7.Name = "button7";
             button7.Size = new Size(86, 55);
             button7.TabIndex = 22;
-            button7.Text = "Aplicar Filtro";
+            button7.Text = "Aplicar Filtro"; // Botón para aplicar filtros en donaciones
             button7.UseVisualStyleBackColor = true;
             button7.Click += button7_Click;
             // 
@@ -309,7 +312,7 @@ namespace eventos.Views
             button8.Name = "button8";
             button8.Size = new Size(86, 56);
             button8.TabIndex = 25;
-            button8.Text = "Limpiar Filtros";
+            button8.Text = "Limpiar Filtros"; // Botón para limpiar filtros
             button8.UseVisualStyleBackColor = true;
             button8.Click += button8_Click;
             // 
@@ -320,12 +323,12 @@ namespace eventos.Views
             button9.Name = "button9";
             button9.Size = new Size(86, 55);
             button9.TabIndex = 24;
-            button9.Text = "Aplicar Filtro";
+            button9.Text = "Aplicar Filtro"; // Botón para aplicar filtros en solicitudes
             button9.UseVisualStyleBackColor = true;
             button9.Click += button9_Click;
             // 
             // textBoxNombreSolicitorFilter
-            // 
+            // Configuración de campos de texto para filtros de solicitantes
             textBoxNombreSolicitorFilter.Location = new Point(1174, 53);
             textBoxNombreSolicitorFilter.Margin = new Padding(3, 4, 3, 4);
             textBoxNombreSolicitorFilter.Name = "textBoxNombreSolicitorFilter";
@@ -338,16 +341,16 @@ namespace eventos.Views
             textBoxUrgenciaFilter.Margin = new Padding(3, 4, 3, 4);
             textBoxUrgenciaFilter.Name = "textBoxUrgenciaFilter";
             textBoxUrgenciaFilter.Size = new Size(114, 27);
-            textBoxUrgenciaFilter.TabIndex = 27;
+            textBoxUrgenciaFilter.TabIndex = 27; // Filtro por nivel de urgencia
             // 
             // label4
-            // 
+            // Proporcionan contexto sobre los campos de entrada para el usuario.
             label4.AutoSize = true;
             label4.Location = new Point(1163, 31);
             label4.Name = "label4";
             label4.Size = new Size(146, 20);
             label4.TabIndex = 28;
-            label4.Text = "Nombre del solicitor";
+            label4.Text = "Nombre del solicitor"; // Etiqueta para nombre de solicitante
             // 
             // label5
             // 
@@ -356,16 +359,16 @@ namespace eventos.Views
             label5.Name = "label5";
             label5.Size = new Size(125, 20);
             label5.TabIndex = 29;
-            label5.Text = "Nivel de urgencia";
+            label5.Text = "Nivel de urgencia"; // Etiqueta para urgencia
             // 
             // label6
-            // 
+            // Estas etiquetas describen los campos relacionados con donaciones
             label6.AutoSize = true;
             label6.Location = new Point(302, 420);
             label6.Name = "label6";
             label6.Size = new Size(151, 20);
             label6.TabIndex = 30;
-            label6.Text = "Nombre de donación";
+            label6.Text = "Nombre de donación"; // Nombre de la donación
             // 
             // label7
             // 
@@ -374,7 +377,7 @@ namespace eventos.Views
             label7.Name = "label7";
             label7.Size = new Size(75, 20);
             label7.TabIndex = 31;
-            label7.Text = "Ubicación";
+            label7.Text = "Ubicación"; // Ubicación de la donación
             // 
             // label8
             // 
@@ -383,16 +386,16 @@ namespace eventos.Views
             label8.Name = "label8";
             label8.Size = new Size(77, 20);
             label8.TabIndex = 32;
-            label8.Text = "Proveedor";
+            label8.Text = "Proveedor"; // Proveedor de la donación
             // 
             // label9
-            // 
+            // Describen los campos relacionados con los recursos.
             label9.AutoSize = true;
             label9.Location = new Point(283, 27);
             label9.Name = "label9";
             label9.Size = new Size(141, 20);
             label9.TabIndex = 33;
-            label9.Text = "Nombre del recurso";
+            label9.Text = "Nombre del recurso"; // Nombre del recurso
             // 
             // label10
             // 
@@ -401,7 +404,7 @@ namespace eventos.Views
             label10.Name = "label10";
             label10.Size = new Size(69, 20);
             label10.TabIndex = 34;
-            label10.Text = "Cantidad";
+            label10.Text = "Cantidad"; // Cantidad del recurso
             // 
             // label11
             // 
@@ -410,15 +413,15 @@ namespace eventos.Views
             label11.Name = "label11";
             label11.Size = new Size(75, 20);
             label11.TabIndex = 35;
-            label11.Text = "Ubicación";
+            label11.Text = "Ubicación"; // Ubicación del recurso
             // 
             // button10
-            // 
+            // Estos botones permiten al usuario generar diferentes tipos de reportes.
             button10.Location = new Point(806, 471);
             button10.Name = "button10";
             button10.Size = new Size(668, 65);
             button10.TabIndex = 36;
-            button10.Text = "Generar reporte de recursos";
+            button10.Text = "Generar reporte de recursos"; // Botón para generar reporte de recursos
             button10.UseVisualStyleBackColor = true;
             button10.Click += button10_Click;
             // 
@@ -430,7 +433,7 @@ namespace eventos.Views
             label12.Name = "label12";
             label12.Size = new Size(107, 32);
             label12.TabIndex = 37;
-            label12.Text = "Reportes";
+            label12.Text = "Reportes"; // Título de la sección de reportes
             // 
             // button11
             // 
@@ -438,7 +441,7 @@ namespace eventos.Views
             button11.Name = "button11";
             button11.Size = new Size(668, 65);
             button11.TabIndex = 38;
-            button11.Text = "Generar reporte donaciones";
+            button11.Text = "Generar reporte donaciones"; // Botón para generar reporte de donaciones
             button11.UseVisualStyleBackColor = true;
             button11.Click += button11_Click;
             // 
@@ -448,72 +451,72 @@ namespace eventos.Views
             button12.Name = "button12";
             button12.Size = new Size(668, 65);
             button12.TabIndex = 39;
-            button12.Text = "Generar reporte de solictudes";
+            button12.Text = "Generar reporte de solictudes"; // Botón para generar reporte de solicitudes
             button12.UseVisualStyleBackColor = true;
             button12.Click += button12_Click;
             // 
             // button13
-            // 
+            // Este boton permite a los usuarios generar un reporte especifico
             button13.Location = new Point(805, 684);
             button13.Name = "button13";
             button13.Size = new Size(668, 65);
             button13.TabIndex = 40;
             button13.Text = "Generar reporte eventos";
             button13.UseVisualStyleBackColor = true;
-            button13.Click += button13_Click;
+            button13.Click += button13_Click; // Evento de clic para generar el reporte
             // 
             // contextMenuStrip1
             // 
             contextMenuStrip1.ImageScalingSize = new Size(20, 20);
             contextMenuStrip1.Name = "contextMenuStrip1";
-            contextMenuStrip1.Size = new Size(61, 4);
+            contextMenuStrip1.Size = new Size(61, 4); // Tamaño del menú contextual
             // 
             // contextMenuStrip2
             // 
             contextMenuStrip2.ImageScalingSize = new Size(20, 20);
             contextMenuStrip2.Name = "contextMenuStrip2";
-            contextMenuStrip2.Size = new Size(61, 4);
+            contextMenuStrip2.Size = new Size(61, 4); // Tamaño del segundo menú contextual
             // 
             // menuStrip1
-            // 
+            // La barra de menú proporciona opciones para navegar en la aplicación.
             menuStrip1.ImageScalingSize = new Size(20, 20);
             menuStrip1.Items.AddRange(new ToolStripItem[] { menuToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(1611, 28);
+            menuStrip1.Size = new Size(1611, 28); // Tamaño de la barra de menú
             menuStrip1.TabIndex = 43;
             menuStrip1.Text = "menuStrip1";
             // 
             // menuToolStripMenuItem
-            // 
+            // Configuración del menú desplegable
             menuToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { verIntegrantesToolStripMenuItem, salirToolStripMenuItem });
             menuToolStripMenuItem.Name = "menuToolStripMenuItem";
             menuToolStripMenuItem.Size = new Size(60, 24);
-            menuToolStripMenuItem.Text = "Menu";
+            menuToolStripMenuItem.Text = "Menu"; // Texto del menu
             // 
             // verIntegrantesToolStripMenuItem
-            // 
+            // Opción para ver integrantes
             verIntegrantesToolStripMenuItem.Name = "verIntegrantesToolStripMenuItem";
             verIntegrantesToolStripMenuItem.Size = new Size(224, 26);
-            verIntegrantesToolStripMenuItem.Text = "Ver integrantes";
-            verIntegrantesToolStripMenuItem.Click += mostrarIntegrantes;
+            verIntegrantesToolStripMenuItem.Text = "Ver integrantes"; // Texto de la opción
+            verIntegrantesToolStripMenuItem.Click += mostrarIntegrantes; // Evento de clic
             // 
             // salirToolStripMenuItem
-            // 
+            // Opción para salir de la aplicación
             salirToolStripMenuItem.Name = "salirToolStripMenuItem";
             salirToolStripMenuItem.Size = new Size(224, 26);
-            salirToolStripMenuItem.Text = "Salir";
-            salirToolStripMenuItem.Click += salir;
+            salirToolStripMenuItem.Text = "Salir"; // Texto de la opción
+            salirToolStripMenuItem.Click += salir; // Evento de clic para cerrar la aplicación
             // 
             // Operador
-            // 
+            // Aquí se establecen las propiedades generales de la ventana.
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
-            ClientSize = new Size(1611, 844);
-            Controls.Add(menuStrip1);
-            Controls.Add(button13);
-            Controls.Add(button12);
+            ClientSize = new Size(1611, 844); // Tamaño de la ventana principal
+            Controls.Add(menuStrip1); // Añadir barra de menú
+            Controls.Add(button13); // Añadir botón de reporte de eventos
+            Controls.Add(button12); // Otros controles
             Controls.Add(button11);
             Controls.Add(label12);
             Controls.Add(button10);
@@ -551,22 +554,25 @@ namespace eventos.Views
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(dataGridView1);
-            MainMenuStrip = menuStrip1;
+            MainMenuStrip = menuStrip1; // Establecer la barra de menú principal
             Margin = new Padding(3, 4, 3, 4);
-            Name = "Operador";
-            Text = "Operador";
-            Load += Operador_Load;
+            Name = "Operador"; // Nombre de la ventana
+            Text = "Operador"; // Título de la ventana
+            Load += Operador_Load; // Evento de carga de la ventana
+
+            // Inicialización de componentes
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView3).EndInit();
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             ResumeLayout(false);
-            PerformLayout();
+            PerformLayout(); // Finalizar configuración de la interfaz
         }
 
         #endregion
 
+        // Declaración de componentes utilizados en la ventana
         private DataGridView dataGridView1;
         private Button button1;
         private Button button2;
@@ -617,4 +623,4 @@ namespace eventos.Views
         private ToolStripMenuItem verIntegrantesToolStripMenuItem;
         private ToolStripMenuItem salirToolStripMenuItem;
     }
-} //actualizar
+}
