@@ -12,25 +12,26 @@ namespace eventos.Views
 {
     public partial class MainForm : Form
     {
-        private string _role;
+        private string _role; // Variable para almacenar el rol del usuario.
 
         public MainForm(string role)
         {
-            InitializeComponent();
-            _role = role;
+            InitializeComponent(); // Inicializa los componentes del formulario.
+            _role = role; // Asigna el rol recibido al campo privado.
 
-            LoadDataForRole();
+            LoadDataForRole(); // Cargar datos en función del rol.
         }
 
+        // Método que carga información dependiendo del rol del usuario.
         private void LoadDataForRole()
         {
             if (_role == "admin")
             {
-                MessageBox.Show("admin");
+                MessageBox.Show("admin"); // Muestra mensaje si el rol es admin.
             }
             else if (_role == "operador")
             {
-                MessageBox.Show("operador ahora");
+                MessageBox.Show("operador ahora"); // Muestra mensaje si el rol es operador.
             }
         }
     }

@@ -15,9 +15,9 @@
         {
             if (disposing && (components != null))
             {
-                components.Dispose();
+                components.Dispose(); // Liberar recursos si existen.
             }
-            base.Dispose(disposing);
+            base.Dispose(disposing); // Llama a la base para completar la limpieza.
         }
 
         #region Windows Form Designer generated code
@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            txtUsername = new TextBox();
-            txtPassword = new TextBox();
-            btnLogin = new Button();
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            button1 = new Button();
+            txtUsername = new TextBox(); // Caja de texto para el nombre de usuario.
+            txtPassword = new TextBox(); // Caja de texto para la contraseña.
+            btnLogin = new Button(); // Botón para iniciar sesión.
+            label1 = new Label(); // Etiqueta "USUARIO".
+            label2 = new Label(); // Etiqueta con el título "CENTRO DE ACOPIO".
+            label3 = new Label(); // Etiqueta "CONTRASEÑA".
+            button1 = new Button(); // Botón "SALIR". 
             SuspendLayout();
             // 
             // txtUsername
@@ -43,14 +43,14 @@
             txtUsername.Margin = new Padding(3, 2, 3, 2);
             txtUsername.Name = "txtUsername";
             txtUsername.Size = new Size(364, 23);
-            txtUsername.TabIndex = 0;
+            txtUsername.TabIndex = 0; // Orden de tabulación.
             // 
             // txtPassword
             // 
             txtPassword.Location = new Point(38, 118);
             txtPassword.Margin = new Padding(3, 2, 3, 2);
             txtPassword.Name = "txtPassword";
-            txtPassword.PasswordChar = '*';
+            txtPassword.PasswordChar = '*'; // Ocultar texto con asteriscos.
             txtPassword.Size = new Size(364, 23);
             txtPassword.TabIndex = 1;
             // 
@@ -64,7 +64,7 @@
             btnLogin.TabIndex = 2;
             btnLogin.Text = "INICIAR SESION";
             btnLogin.UseVisualStyleBackColor = false;
-            btnLogin.Click += btnLogin_Click;
+            btnLogin.Click += btnLogin_Click; // Evento de clic para iniciar sesión.
             // 
             // label1
             // 
@@ -73,7 +73,7 @@
             label1.Name = "label1";
             label1.Size = new Size(56, 15);
             label1.TabIndex = 3;
-            label1.Text = "USUARIO";
+            label1.Text = "USUARIO"; // Texto para el campo de usuario.
             // 
             // label2
             // 
@@ -83,7 +83,7 @@
             label2.Name = "label2";
             label2.Size = new Size(213, 30);
             label2.TabIndex = 4;
-            label2.Text = "CENTRO DE ACOPIO";
+            label2.Text = "CENTRO DE ACOPIO"; // Título del formulario.
             // 
             // label3
             // 
@@ -92,7 +92,7 @@
             label3.Name = "label3";
             label3.Size = new Size(83, 15);
             label3.TabIndex = 5;
-            label3.Text = "CONTRASEÑA";
+            label3.Text = "CONTRASEÑA"; // Texto para el campo de contraseña.
             // 
             // button1
             // 
@@ -104,35 +104,35 @@
             button1.TabIndex = 6;
             button1.Text = "SALIR";
             button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
+            button1.Click += button1_Click; // Evento de clic para salir.
             // 
             // Login
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(441, 276);
-            Controls.Add(button1);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(label1);
-            Controls.Add(btnLogin);
-            Controls.Add(txtPassword);
-            Controls.Add(txtUsername);
+            Controls.Add(button1); // Añadir botón salir al formulario.
+            Controls.Add(label3);  // Añadir etiqueta contraseña.
+            Controls.Add(label2);  // Añadir título.
+            Controls.Add(label1);  // Añadir etiqueta usuario.
+            Controls.Add(btnLogin); // Añadir botón iniciar sesión.
+            Controls.Add(txtPassword); // Añadir campo contraseña.
+            Controls.Add(txtUsername); // Añadir campo usuario.
             Margin = new Padding(3, 2, 3, 2);
             Name = "Login";
-            Text = "INICIO DE SESION";
+            Text = "INICIO DE SESION"; // Título de la ventana del formulario.
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private TextBox txtUsername;
-        private TextBox txtPassword;
-        private Button btnLogin;
-        private Label label1;
-        private Label label2;
-        private Label label3;
-        private Button button1;
+        private TextBox txtUsername; // Campo de entrada para el nombre de usuario.
+        private TextBox txtPassword; // Campo de entrada para la contraseña.
+        private Button btnLogin; // Botón para iniciar sesión.
+        private Label label1; // Etiqueta del campo usuario.
+        private Label label2; // Etiqueta del título.
+        private Label label3; // Etiqueta del campo contraseña.
+        private Button button1; // Botón para salir de la aplicación.
     }
 }
