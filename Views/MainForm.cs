@@ -25,14 +25,11 @@ namespace eventos.Views
         // Método que carga información dependiendo del rol del usuario.
         private void LoadDataForRole()
         {
-            if (_role == "admin")
-            {
-                MessageBox.Show("admin"); // Muestra mensaje si el rol es admin.
-            }
-            else if (_role == "operador")
-            {
-                MessageBox.Show("operador ahora"); // Muestra mensaje si el rol es operador.
-            }
+            //cambio
+            
+          MessageBox.Show(_role == "admin" ? "admin" : _role== "operador" ? "operador ahora ");
+        
+
         }
     }
 }

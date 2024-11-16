@@ -44,29 +44,19 @@ namespace eventos
                         command.Parameters.AddWithValue("@username", username);
                         command.Parameters.AddWithValue("@password", password);
                         object result = command.ExecuteScalar();
-
+                         //cambio
                         if (result != null)
                         {
-                            string role = result.ToString()!; // Convertir el resultado a string
-
-                            // Verificar el rol del usuario.
-                            if (role == "admin")
-                            {
-                                Admin admin = new Admin(); // Abrir la vista de administrador
-                                admin.Show();
-                            }
-                            else
-                            {
-                                Operador operador = new Operador(); // Abrir la vista de operador
-                                operador.Show();
-                            }
-
-                            this.Hide(); // Ocultar el formulario de login
+                            string role = result.ToString()!;
+                            Form form = role == "admin" ? new Admin() : new Operador();
+                                 form.Show();
+                                 Hide();
                         }
                         else
                         {
-                            MessageBox.Show("Usuario o contraseña incorrectos.", "Error de inicio de sesión", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            MessageBox.Show("Usuario o contraseña incorrectos.", "Error de inicio de sesion", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
+
                     }
                 }
                 catch (Exception ex)
