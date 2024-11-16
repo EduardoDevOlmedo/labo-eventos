@@ -29,23 +29,20 @@ namespace eventos.Views
             if (dataTable1 == null || dataTable2 == null || dataTable3 == null)
             {
                 return;
-            }
+            } //cambio
             try
             {
-                if (dataTable1.GetChanges() != null)
-                {
-                    sqlDataAdapter1.Update(dataTable1);
-                    dataTable1.AcceptChanges();
-                }
-                if (dataTable2.GetChanges() != null)
-                {
-                    sqlDataAdapter2.Update(dataTable2);
-                    dataTable2.AcceptChanges();
-                }
-                if (dataTable3.GetChanges() != null)
-                {
-                    sqlDataAdapter3.Update(dataTable3);
-                    dataTable3.AcceptChanges();
+               foreach (var (dataTable, adapter) in new[]{ 
+                     (dataTable1, sqlDataAdapter1), 
+                     (dataTable2, sqlDataAdapter2), 
+                    (dataTable3, sqlDataAdapter3) })
+                                                                   
+               {
+                 if (dataTable.GetChanges() != null)
+                     {
+            adapter.Update(dataTable);
+            dataTable.AcceptChanges();
+                      }
                 }
             }
             catch (Exception ex)

@@ -22,7 +22,7 @@ namespace eventos
 
             if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
             {
-                MessageBox.Show("Por favor, ingresa tanto el usuario como la contraseña.", "Error de inicio de sesión", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Por favor, ingresa tanto el usuario como la contraseï¿½a.", "Error de inicio de sesiï¿½n", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
@@ -41,27 +41,17 @@ namespace eventos
                         command.Parameters.AddWithValue("@password", password);
 
                         object result = command.ExecuteScalar();
-
+          //cambio 
                         if (result != null)
                         {
                             string role = result.ToString()!;
-
-                            if (role == "admin")
-                            {
-                                Admin admin = new Admin();
-                                admin.Show();
-                            }
-                            else
-                            {
-                                Operador operador = new Operador();
-                                operador.Show();
-                            }
-
-                            this.Hide();
+                            Form form = role == "admin" ? new Admin() : new Operador();
+                                 form.Show();
+                                 Hide();
                         }
                         else
                         {
-                            MessageBox.Show("Usuario o contraseña incorrectos.", "Error de inicio de sesión", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            MessageBox.Show("Usuario o contraseï¿½a incorrectos.", "Error de inicio de sesiï¿½n", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                     }
                 }

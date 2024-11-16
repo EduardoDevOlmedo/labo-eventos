@@ -22,16 +22,11 @@ namespace eventos.Views
             LoadDataForRole();
         }
 
+
+        //cambio
         private void LoadDataForRole()
         {
-            if (_role == "admin")
-            {
-                MessageBox.Show("admin");
-            }
-            else if (_role == "operador")
-            {
-                MessageBox.Show("operador ahora");
-            }
+          MessageBox.Show(_role == "admin" ? "admin" : _role== "operador" ? "operador ahora ");
         }
     }
 }
