@@ -44,7 +44,7 @@ namespace eventos
                         command.Parameters.AddWithValue("@username", username);
                         command.Parameters.AddWithValue("@password", password);
                         object result = command.ExecuteScalar();
-
+                         //cambio
                         if (result != null)
                         {
                             string role = result.ToString()!;
@@ -54,7 +54,7 @@ namespace eventos
                         }
                         else
                         {
-                            MessageBox.Show("Usuario o contrase a incorrectos.", "Error de inicio de sesi n", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            MessageBox.Show("Usuario o contraseña incorrectos.", "Error de inicio de sesion", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
 
                     }
