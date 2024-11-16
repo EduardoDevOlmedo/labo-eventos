@@ -196,21 +196,10 @@ namespace eventos.Views
         {
             string namesolicitud = nameSolicitor.Text;
             string especificaciones = especificacionesSolicitud.Text;
-            int value = 1;
+          //cambio        
 
-            
-            if (bajaPrioridad.Checked)
-            {
-                value = 1;
-            }
-            if (mediaPrioridad.Checked)
-            {
-                value = 2;
-            }
-            if (altaPrioridad.Checked)
-            {
-                value = 3;
-            }
+          int value = bajaPrioridad.Checked ? 1 : mediaPrioridad.Checked ? 2 : altaPrioridad.Checked ? 3 : 1;
+
 
             
             if (string.IsNullOrEmpty(namesolicitud) || string.IsNullOrEmpty(especificaciones))
