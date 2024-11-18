@@ -308,7 +308,7 @@ namespace eventos.Views
 
             // Verifica si la fila es editable
             bool isEditable = (bool)dataGridView.Rows[e.RowIndex].Cells["atendida"].Value;
-            if (!isEditable)
+            if (isEditable)
             {
                 e.Cancel = true; // Cancela la edición si no es editable
             }
